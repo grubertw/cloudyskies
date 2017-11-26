@@ -1,0 +1,20 @@
+<h1>Weather history for coordinates <%= @latitude %>, <%= @longitude %></h1>
+
+<table class="table">
+<tr>
+  <th>Time</th>
+  <th>Temperature (F)</th>
+  <th>% Chance of Preciptation</th>
+  <th>% Humidity</th>
+  <th>Wind Speed (mph)</th>
+  <th>% Cloud Cover</th>
+</tr>
+<%= for day <- @forecast do %>
+<tr>
+<%= for val <- day do %>
+  <td><%= val %></td>
+<% end %>
+</tr>
+<% end %>
+</table>
+<%= link "Back", to: page_path(@conn, :index) %>
