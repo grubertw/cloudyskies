@@ -1,18 +1,12 @@
 # Cloudyskies
 
-To start your Phoenix server:
+Simple Web App that uses the DarkSky API to get a weather report on the last seven days:
 
-  * Install dependencies with `mix deps.get`
+  * When running in a docker container, the following envirment variables must bet set
+    - PORT, MIX_ENV=prod, DARKSKY_API_KEY
+  * Built with Phoenix web framework
+    - http://www.phoenixframework.org/
   * Start Phoenix endpoint with `mix phx.server`
+  * Powered by DarkSky
+    - https://darksky.net/dev 
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
